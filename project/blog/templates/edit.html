@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load static %} {% block contents %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}"/>
+<body>  
+    <form action="{% url 'update' blog.id %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div  class="edit_page">
+        <div class="titleSpace">
+        <input class="edit_title" type="text" name="title" value="{{blog.title}}"/>
+        </div>
+        <br>
+        <textarea class="edit_content" name="content" id="" cols="30" rows="10">{{blog.content}}</textarea>
+        <br>
+        <input class="save" type="submit" value="저장하기" />
+        <input type="file" name="image"/>
+    </div>
+</form>
+</body>
+{% endblock %}

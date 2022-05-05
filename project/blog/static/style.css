@@ -1,0 +1,152 @@
+a {text-decoration-line: none; 
+    color: inherit;}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}    
+.top {
+    text-align: center;
+}
+.logo {
+    margin-top: 20px;
+}
+.subtitle {
+    margin-top: 0;
+    font-weight: 100;
+}
+.write {
+    font-size: 1.5ch;
+    position: absolute;
+    top: 165px;
+    right:10px;
+}
+.writing {
+    background-color: rgb(232, 232, 232);
+    width: 500px;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.8s;
+    
+    
+}
+
+.writing:hover {
+    background-color: rgb(252, 255, 151);
+    transform: scale(1.1);
+}
+.title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+}
+.createDate {
+    position: absolute;
+    font-size: 1ch;
+    color: rgb(106, 106, 106);
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.preview {
+    word-break:break-all;
+    
+}
+
+hr {
+    margin-bottom: 21.6px;
+}
+
+/* home end */
+
+.detail {
+    text-align: center;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.editing {
+
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    font-size: 1.5ch;
+    
+}
+
+.editing > a {
+    margin-left: 5px;
+}
+.content {
+    background-color: rgb(232, 232, 232);
+    width: 700px;
+    margin: auto;
+    padding: 30px 50px 30px 50px;
+    text-align: left;
+    border-radius: 15px;
+    white-space: pre-wrap;
+    transition: 0.8s;
+}
+
+.content:hover {
+        background-color: rgb(252, 255, 151);
+        transform: scale(1.1);
+}
+
+/* detail end */
+
+.edit_page {
+    text-align: center;
+    position: relative;
+}
+
+input {
+    padding: 5px;
+}
+
+.edit_title {
+    margin: 20px;
+    margin-left: 10px;
+    border: 0.5px solid rgb(225, 225, 225);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.save {
+    position: absolute;
+    top: 40px;
+    right: 480px;
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+.create_home {
+    position: absolute;
+    top: 44px;
+    right: 440px;
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.edit_content {
+    border: 0;
+    background-color:  rgb(232, 232, 232);
+    padding: 20px;
+    width: 700px;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 15px;
+   
+    
+}
+
+/* new end = edit */

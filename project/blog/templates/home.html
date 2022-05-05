@@ -1,0 +1,24 @@
+
+  {% extends 'base.html' %} {% load static %} {% block contents %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}"/>
+  <body>
+  <div class="top">
+  <img class="logo" src="{% static 'blog로고.jpg' %}" alt="blog" width="150" >
+  <h3 class="subtitle">LikeLion 10th Blog Project</h3>
+  </div>
+  <hr>
+  <a class="write" href="{% url 'new' %}"> ⚙ 글쓰기 </a>
+
+{% for blog in blogs %}
+<div class="writing">
+  <a class="list" href="{%url 'detail' blog.id %}"> <!-- 추가 -->
+      <h5 class="title">{{blog.title}}</h5>
+      <h5 class="createDate">{{blog.created_at}}</h5>
+      <p class="preview">{{blog.summary}}</p>
+    </a>
+</div>
+<br />
+{% endfor %}
+</body>
+
+{% endblock %}
